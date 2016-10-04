@@ -1,0 +1,27 @@
+Standard Template Library (STL):
+In your code sometimes you need some Data Structures(DS) and some functions which are used quite frequently. They already have lots of standard functions and data structures implemented within itself which we can use directly.
+Data Structures  ( To be discussed in later lectures ) 
+Vectors
+Stack
+Queue
+Priority Queue
+Set
+Map 
+ Functions
+Sort
+Reverse
+GCD
+Swap
+next_permutation
+binary_search (left + right)
+max, min
+pow, powl
+memset 
+
+
+Now imagine writing codes using these inbuilt functions and data structures . It would be much more simpler now.
+
+What headers/libraries should you include ?
+Basically the above functions / DS are in different libraries. So in some cases you may need to include many headers . But you can include everything using just one header.
+
+        #include <bits/stdc++.h>
