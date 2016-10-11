@@ -1,0 +1,25 @@
+// multiset is the data structures that stores the data in the sorted order and duplicate entry is allowed.
+// this program demonstrates the working of multiset in c++
+#include <bits/stdc++.h>
+using namespace std;
+// This program will ask for the number of numbers you want to input
+// Then it will insert all the numbers into multiset and print it
+inline void __run() {
+    multiset < int > ms; // this creates a new multiset object ms
+    int n , x ;
+    printf("Enter the number of numbers you want to input : \n");
+    scanf("%d" , &n);
+    for(int i = 1; i <= n; ++i) {
+        printf("Next Number : ");
+        scanf("%d" , &x);
+        ms.insert(x); // this inserts the integer x into multiset ms
+    }
+    multiset < int > :: iterator it; // this creats a new uninitialized multiset iterator
+    for(it = ms.begin(); it != ms.end(); ++it) {
+        printf("%d\n" , *it); // print each element in a multiset
+    }
+}
+int main() {
+    __run(); // run the program
+    return 0;
+}
